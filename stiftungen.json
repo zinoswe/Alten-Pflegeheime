@@ -84,4 +84,14 @@
       "richtlinien": "https://www.eva-meurer-stiftung.de/index_htm_files/Foerderrichtlinien%20Eva%20Meurer%20Stiftung.pdf"
     }
   }
+  {
+  "name": "Förderung nach dem Pflegepersonal-Stärkungsgesetz (PpSG)",
+  "typ": "Staatliche Förderung",
+  "gebiet": "bundesweit",
+  "beschreibung": "Gemäß § 8 Absatz 8 SGB XI können stationäre Pflegeeinrichtungen einen einmaligen Zuschuss von bis zu 12.000 Euro für die Anschaffung digitaler oder technischer Ausrüstung erhalten. Die Fördermittel für Digitalisierungsprojekte wurden aufgrund des Pflegeunterstützungs- und -entlastungsgesetzes (PUEG) durch Beschluss vom 12. Juli 2023 bis zum 31. Dezember 2030 verlängert. Der Antrag ist an eine als Partei der Pflegesatzvereinbarung beteiligte Pflegekasse, deren Landesverband oder den Verband der Ersatzkassen e. V. in dem Bundesland zu richten, in dem die Pflegeeinrichtung zugelassen ist. Förderungsfähig sind einmalige Anschaffungen von digitaler oder technischer Ausrüstung sowie damit einhergehende Kosten der Inbetriebnahme wie der Erwerb von Lizenzen oder die Einrichtung von W-LAN. Gefördert werden bis zu 40 Prozent der durch die Pflegeeinrichtung verausgabten und bewilligten Mittel. Pro Pflegeeinrichtung ist höchstens ein Zuschuss in Höhe von 12.000 Euro möglich. Ziel: Unteranderem die Förderung digitaler Anwendungen zur Entlastung der Pflegekräfte, die das interne Qualitätsmanagement betreffen!",
+  "links": {
+    "antrag": "https://www.gkv-spitzenverband.de/media/dokumente/pflegeversicherung/finanzierungs_foerderungsmassnahmen/20230704_Pflege_Foerderung_8Abs8_SGBXI_Muster_Antrag.xlsx",
+    "richtlinien": "https://www.gkv-spitzenverband.de/media/dokumente/pflegeversicherung/finanzierungs_foerderungsmassnahmen/20230712_Pflege_Foerderung_Digi_RiLi_8_Abs.8_SGB_XI.pdf"
+  }
+}
 ]
