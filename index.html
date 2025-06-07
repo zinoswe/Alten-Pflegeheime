@@ -3,47 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fördermittel für Altenheime</title>
+  <title>Fördermittelkompass</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(to bottom right, #f0f4ff, #fff0f5);
+      background-color: #fafaf9;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .hero {
-      background: linear-gradient(to right, #f9fafb, #e3f2fd);
-      border-bottom: 2px solid #d1d5db;
+      background-color: #fff7f0;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    .kompass-icon {
+      font-size: 1.75rem;
+      margin-right: 0.5rem;
+      display: inline-block;
     }
   </style>
 </head>
 <body class="min-h-screen text-gray-800">
-  <header class="hero py-10 px-4 shadow">
+  <header class="hero py-8 px-4 shadow">
     <div class="max-w-4xl mx-auto text-center">
       <h1 class="text-4xl md:text-5xl font-bold text-pink-600 leading-tight">
-        Digitale Unterstützung für Senior*innen – Jetzt Fördermöglichkeiten entdecken!
+        <span class="kompass-icon">🧭</span>Fördermittelkompass
       </h1>
-      <p class="mt-4 text-lg text-gray-600">
-        Finde staatliche Programme, Stiftungen und Lotterien zur Förderung digitaler Betreuungsangebote in Altenpflegeeinrichtungen.
+      <p class="mt-3 text-lg text-gray-600">
+        Finde passende Förderprogramme für digitale Betreuungsangebote in Pflegeeinrichtungen.
       </p>
     </div>
   </header>
 
-  <main class="max-w-3xl mx-auto py-10 px-4">
-    <div class="bg-white bg-opacity-90 p-6 rounded shadow">
-      <label for="ort" class="block mb-2 text-lg font-medium">Gib eine Stadt ein (z. B. Hannover):</label>
-      <div class="flex flex-col sm:flex-row gap-2 mb-6">
-        <input id="ort" type="text" placeholder="Ort eingeben..." class="flex-1 p-2 border border-gray-300 rounded shadow-sm" />
-        <button onclick="sucheFoerderungen()" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 shadow">Suchen</button>
+  <main class="max-w-3xl mx-auto py-12 px-4">
+    <div class="bg-white p-6 rounded-xl shadow-lg">
+      <label for="ort" class="block mb-3 text-lg font-medium">Gib einen Ort ein (z. B. Bamberg):</label>
+      <div class="flex flex-col sm:flex-row gap-3 mb-6">
+        <input id="ort" type="text" placeholder="Ort eingeben..." class="flex-1 p-3 border border-gray-300 rounded-md shadow-sm text-lg" />
+        <button onclick="sucheFoerderungen()" class="bg-pink-600 text-white px-6 py-3 rounded-md hover:bg-pink-700 shadow text-lg">Suchen</button>
       </div>
     </div>
-    <div id="ergebnisse" class="space-y-6 mt-8"></div>
+    <div id="ergebnisse" class="space-y-6 mt-10"></div>
   </main>
 
-  <footer class="text-center text-sm text-gray-600 p-4 border-t bg-white bg-opacity-70">
-    © 2025 – Fördermittelsuche für Altenpflegeeinrichtungen
+  <footer class="text-center text-sm text-gray-500 py-6 border-t bg-white">
+    © 2025 – Fördermittelkompass – Eine private Initiative zur Unterstützung sozialer Pflegeprojekte
   </footer>
 
-  <!-- Wichtig: Version anhängen, um Cache zu umgehen -->
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
