@@ -1,61 +1,67 @@
-let orte = [];
-let stiftungen = [];
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fördermittel für Altenheime</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('Altenheimfoto.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .overlay {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(4px);
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .hero {
+      border-bottom: 2px solid #e0e0e0;
+    }
+    .kompass {
+      display: inline-block;
+      font-size: 1.8rem;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+    .highlight-box {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-gray-800">
+  <header class="hero py-10 px-4">
+    <div class="overlay max-w-4xl mx-auto text-center p-6">
+      <h1 class="text-4xl md:text-5xl font-bold text-pink-600 leading-tight">
+        <span class="kompass">🧭</span>Digitale Unterstützung für Senior*innen – Jetzt Fördermöglichkeiten entdecken!
+      </h1>
+      <p class="mt-4 text-lg text-gray-600">
+        Finde staatliche Programme, Stiftungen und Lotterien zur Förderung digitaler Betreuungsangebote in Altenpflegeeinrichtungen.
+      </p>
+    </div>
+  </header>
 
-// Daten laden
-async function ladeDaten() {
-  const [orteRes, stiftungenRes] = await Promise.all([
-    fetch('orte.json'),
-    fetch('stiftungen.json')
-  ]);
-  orte = await orteRes.json();
-  stiftungen = await stiftungenRes.json();
-}
+  <main class="max-w-3xl mx-auto py-10 px-4">
+    <div class="overlay bg-white p-6">
+      <label for="ort" class="block mb-2 text-lg font-medium">Gib eine Stadt ein (z. B. Hannover):</label>
+      <div class="flex flex-col sm:flex-row gap-2 mb-6">
+        <input id="ort" type="text" placeholder="Ort eingeben..." class="flex-1 p-2 border border-gray-300 rounded shadow-sm" />
+        <button onclick="sucheFoerderungen()" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 shadow">Suchen</button>
+      </div>
+    </div>
+    <div id="ergebnisse" class="space-y-6 mt-8"></div>
+  </main>
 
-ladeDaten();
+  <footer class="text-center text-sm text-gray-600 p-4 border-t bg-white bg-opacity-80">
+    © 2025 – Fördermittelsuche für Altenpflegeeinrichtungen
+  </footer>
 
-function sucheFoerderungen() {
-  const ort = document.getElementById('ort').value.trim();
-  const ergebnisBox = document.getElementById('ergebnisse');
-  ergebnisBox.innerHTML = '';
-
-  const ortEintrag = orte.find(o => o.ort.toLowerCase() === ort.toLowerCase());
-  const bundesland = ortEintrag ? ortEintrag.bundesland : null;
-
-  const lokale = ortEintrag ? stiftungen.filter(s => s.gebiet.toLowerCase() === ort.toLowerCase()) : [];
-  const regionale = ortEintrag ? stiftungen.filter(s => s.gebiet === bundesland) : [];
-  const bundesweit = stiftungen.filter(s => s.gebiet === 'bundesweit');
-
-  if (!ortEintrag) {
-    ergebnisBox.innerHTML = `<p class='text-red-600 font-semibold'>Dieser Ort konnte nicht gefunden werden. Hier sind bundesweite Finanzierungsquellen:</p>`;
-    zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
-  } else {
-    ergebnisBox.innerHTML = `<p class='font-semibold'>Gefundene Förderungen für <strong>${ortEintrag.ort}</strong> (${bundesland}):</p>`;
-    if (lokale.length) zeigeKategorie(`📍 Lokale Angebote (${ort})`, lokale, ergebnisBox);
-    if (regionale.length) zeigeKategorie(`🏳️ Regionale Angebote (${bundesland})`, regionale, ergebnisBox);
-    zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
-  }
-}
-
-function zeigeKategorie(titel, eintraege, container) {
-  const farben = {
-    "Staatliche Förderung": "bg-green-100",
-    "Soziallotterie": "bg-yellow-100",
-    "Stiftung": "bg-blue-100"
-  };
-
-  const block = document.createElement('div');
-  block.innerHTML = `<h2 class="text-xl font-bold mt-4">${titel}</h2>`;
-  eintraege.forEach(e => {
-    const farbe = farben[e.typ] || 'bg-gray-100';
-    const div = document.createElement('div');
-    div.className = `p-4 mt-2 rounded shadow ${farbe}`;
-    div.innerHTML = `
-      <h3 class="font-semibold text-lg">${e.name}</h3>
-      <p class="mb-2">${e.beschreibung}</p>
-      ${e.links?.antrag ? `<a href="${e.links.antrag}" target="_blank" class="text-blue-700 underline">Antrag</a><br>` : ''}
-      ${e.links?.richtlinien ? `<a href="${e.links.richtlinien}" target="_blank" class="text-blue-700 underline">Förderrichtlinien</a>` : ''}
-    `;
-    block.appendChild(div);
-  });
-  container.appendChild(block);
-}
+  <script src="script.js?v=3"></script>
+</body>
+</html>
