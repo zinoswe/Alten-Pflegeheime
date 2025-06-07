@@ -1,34 +1,61 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fördermittel für Altenheime</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    body {
-      background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
-    }
-  </style>
-</head>
-<body class="min-h-screen text-gray-800 font-sans">
-  <header class="bg-pink-600 text-white py-6 shadow">
-    <h1 class="text-3xl md:text-4xl font-bold text-center">Fördermittel für digitale Betreuungsangebote in Altenheimen</h1>
-  </header>
+let orte = [];
+let stiftungen = [];
 
-  <main class="max-w-3xl mx-auto py-10 px-4">
-    <label for="ort" class="block mb-2 text-lg font-medium">Gib einen Ort ein (z. B. Bamberg):</label>
-    <div class="flex gap-2 mb-4">
-      <input id="ort" type="text" placeholder="Ort eingeben..." class="flex-1 p-2 border border-gray-300 rounded shadow-sm" />
-      <button onclick="sucheFoerderungen()" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 shadow">Suchen</button>
-    </div>
-    <div id="ergebnisse" class="space-y-6"></div>
-  </main>
+// Daten laden
+async function ladeDaten() {
+  const [orteRes, stiftungenRes] = await Promise.all([
+    fetch('orte.json'),
+    fetch('stiftungen.json')
+  ]);
+  orte = await orteRes.json();
+  stiftungen = await stiftungenRes.json();
+}
 
-  <footer class="text-center text-sm text-gray-600 p-4 border-t bg-white bg-opacity-70">
-    © 2025 – Private Fördermittelsuche für Pflegeeinrichtungen
-  </footer>
+ladeDaten();
 
-  <script src="script.js"></script>
-</body>
-</html>
+function sucheFoerderungen() {
+  const ort = document.getElementById('ort').value.trim();
+  const ergebnisBox = document.getElementById('ergebnisse');
+  ergebnisBox.innerHTML = '';
+
+  const ortEintrag = orte.find(o => o.ort.toLowerCase() === ort.toLowerCase());
+  const bundesland = ortEintrag ? ortEintrag.bundesland : null;
+
+  const lokale = ortEintrag ? stiftungen.filter(s => s.gebiet.toLowerCase() === ort.toLowerCase()) : [];
+  const regionale = ortEintrag ? stiftungen.filter(s => s.gebiet === bundesland) : [];
+  const bundesweit = stiftungen.filter(s => s.gebiet === 'bundesweit');
+
+  if (!ortEintrag) {
+    ergebnisBox.innerHTML = `<p class='text-red-600 font-semibold'>Dieser Ort konnte nicht gefunden werden. Hier sind bundesweite Finanzierungsquellen:</p>`;
+    zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
+  } else {
+    ergebnisBox.innerHTML = `<p class='font-semibold'>Gefundene Förderungen für <strong>${ortEintrag.ort}</strong> (${bundesland}):</p>`;
+    if (lokale.length) zeigeKategorie(`📍 Lokale Angebote (${ort})`, lokale, ergebnisBox);
+    if (regionale.length) zeigeKategorie(`🏳️ Regionale Angebote (${bundesland})`, regionale, ergebnisBox);
+    zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
+  }
+}
+
+function zeigeKategorie(titel, eintraege, container) {
+  const farben = {
+    "Staatliche Förderung": "bg-green-100",
+    "Soziallotterie": "bg-yellow-100",
+    "Stiftung": "bg-blue-100"
+  };
+
+  const block = document.createElement('div');
+  block.innerHTML = `<h2 class="text-xl font-bold mt-4">${titel}</h2>`;
+  eintraege.forEach(e => {
+    const farbe = farben[e.typ] || 'bg-gray-100';
+    const div = document.createElement('div');
+    div.className = `p-4 mt-2 rounded shadow ${farbe}`;
+    div.innerHTML = `
+      <h3 class="font-semibold text-lg">${e.name}</h3>
+      <p class="mb-2">${e.beschreibung}</p>
+      ${e.links?.antrag ? `<a href="${e.links.antrag}" target="_blank" class="text-blue-700 underline">Antrag</a><br>` : ''}
+      ${e.links?.richtlinien ? `<a href="${e.links.richtlinien}" target="_blank" class="text-blue-700 underline">Förderrichtlinien</a>` : ''}
+    `;
+    block.appendChild(div);
+  });
+  container.appendChild(block);
+}
