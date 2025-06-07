@@ -31,4 +31,13 @@
   <main class="max-w-3xl mx-auto py-10 px-4">
     <div class="bg-white bg-opacity-90 p-6 rounded shadow">
       <label for="ort" class="block mb-2 text-lg font-medium">Gib einen Ort ein (z. B. Bamberg):</label>
-      <div class="fle
+      <div class="flex flex-col sm:flex-row gap-2 mb-6">
+        <input id="ort" type="text" placeholder="Ort eingeben..." class="flex-1 p-2 border border-gray-300 rounded shadow-sm" />
+        <button onclick="sucheFoerderungen()" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 shadow">Suchen</button>
+      </div>
+    </div>
+    <div id="ergebnisse" class="space-y-6 mt-8"></div>
+  </main>
+
+  <footer class="text-center text-sm text-gray-600 p-4 border-t bg-white bg-opacity-70">
+    © 202
