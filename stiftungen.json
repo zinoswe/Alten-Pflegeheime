@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Förderung nach dem Pflegepersonal-Stärkungsgesetz (PpSG)",
+    "typ": "Staatliche Förderung",
+    "gebiet": "bundesweit",
+    "beschreibung": "Stationäre Pflegeeinrichtungen erhalten bis zu 12.000 € Zuschuss für digitale/technische Ausstattung. Förderfähig sind z. B. WLAN, Lizenzen, Geräte. Antragsfrist bis 31.12.2030.",
+    "links": {
+      "antrag": "https://www.gkv-spitzenverband.de/media/dokumente/pflegeversicherung/finanzierungs_foerderungsmassnahmen/20230704_Pflege_Foerderung_8Abs8_SGBXI_Muster_Antrag.xlsx",
+      "richtlinien": "https://www.gkv-spitzenverband.de/media/dokumente/pflegeversicherung/finanzierungs_foerderungsmassnahmen/20230712_Pflege_Foerderung_Digi_RiLi_8_Abs.8_SGB_XI.pdf"
+    }
+  },
+  {
+    "name": "GlücksSpirale",
+    "typ": "Soziallotterie",
+    "gebiet": "bundesweit",
+    "beschreibung": "Förderung gemeinnütziger Projekte durch Wohlfahrtsverbände. Antrag nur über Mitgliedschaft bei einem der sechs anerkannten Spitzenverbände möglich. Fokus auch auf Altenhilfe.",
+    "links": {
+      "antrag": "https://gluecksspirale.bagfw.de/login/",
+      "richtlinien": "https://gluecksspirale.bagfw.de/dokument/2ed668b4-fd04-446b-938a-4fe1ae4bcb6b"
+    }
+  },
+  {
+    "name": "Commerzbank-Stiftung",
+    "typ": "Stiftung",
+    "gebiet": "bundesweit",
+    "beschreibung": "Fördert soziale Projekte mit Fokus auf Teilhabe und Integration. Antrag formlos per Mail; Vorabtelefonat empfohlen.",
+    "links": {
+      "antrag": "mailto:commerzbank-stiftung@commerzbank.com"
+    }
+  },
+  {
+    "name": "Lotte-Lettau-Stiftung",
+    "typ": "Stiftung",
+    "gebiet": "Hannover",
+    "beschreibung": "Unterstützt musisch aktive Senior*innen in Hannover. Förderung von Orchestermusik, Gesang, Theater und Kunst.",
+    "links": {
+      "telefon": "0511 1683950"
+    }
+  },
+  {
+    "name": "Stiftung der Stadt Bamberg: Edith-und-Erhard-Bausch-Stiftung",
+    "typ": "Stiftung",
+    "gebiet": "Bamberg",
+    "beschreibung": "Fördert Altenhilfeprojekte in Bamberg. Antrag direkt an Stadtverwaltung.",
+    "links": {
+      "satzung": "https://www.stadt.bamberg.de/media/custom/3267_533_1.PDF?1652951984"
+    }
+  },
+  {
+    "name": "Förderprogramm Niedersachsen – Wohlfahrtspflegerische Aufgaben",
+    "typ": "Staatliche Förderung",
+    "gebiet": "Niedersachsen",
+    "beschreibung": "Fördert Maßnahmen im sozialen Bereich für alte oder pflegebedürftige Menschen. Projekt darf noch nicht begonnen haben, max. 3 Jahre Laufzeit, mind. 10 % Eigenmittel.",
+    "links": {
+      "antrag": "https://soziales.niedersachsen.de/download/210264/Antragsvordruck_aussergwoehnliche_Massnahmen.pdf",
+      "richtlinien": "https://www.ms.niedersachsen.de/startseite/soziales_inklusion/soziales/forderprogramme/allgemeine-forderung-wohlfahrtspflegerischer-aufgaben-212758.html"
+    }
+  },
+  {
+    "name": "Förderrichtlinie Pflege – WoLeRaF",
+    "typ": "Staatliche Förderung",
+    "gebiet": "Bayern",
+    "beschreibung": "Fördert modellhafte Einzelprojekte zur Verbesserung der Pflegebedingungen mit bis zu 100.000 €. Antragsberechtigt sind Pflegeeinrichtungen und ambulante Wohngemeinschaften in Bayern.",
+    "links": {
+      "antrag": "https://www.lfp.bayern.de/wp-content/uploads/2021/03/03_antrag_einzelfall_woleraf.pdf"
+    }
+  },
+  {
+    "name": "Deutsche Postcode Lotterie",
+    "typ": "Soziallotterie",
+    "gebiet": "bundesweit",
+    "beschreibung": "Fördert Projekte mit sozialem Mehrwert (z. B. gegen Altersarmut, Einsamkeit). Max. Fördersumme 250.000 €, bis zu 24 Monate Laufzeit.",
+    "links": {
+      "antrag": "https://postcode-lotterie.my.site.com/s/login/?ec=302&startURL=%2Fs%2F",
+      "richtlinien": "https://a.storyblok.com/f/165273/x/6f625df8ed/2025-02.pdf"
+    }
+  },
+  {
+    "name": "Eva Meurer Stiftung",
+    "typ": "Stiftung",
+    "gebiet": "bundesweit",
+    "beschreibung": "Fördert Altenhilfeprojekte zur Unterstützung eines selbstbestimmten Lebens älterer Menschen. Antragstellung digital oder postalisch möglich.",
+    "links": {
+      "richtlinien": "https://www.eva-meurer-stiftung.de/index_htm_files/Foerderrichtlinien%20Eva%20Meurer%20Stiftung.pdf"
+    }
+  }
+]
