@@ -1,7 +1,12 @@
 let orte = [];
 let stiftungen = [];
 
-// Daten laden
+const bundeslaender = [
+  "baden-württemberg", "bayern", "berlin", "brandenburg", "bremen", "hamburg",
+  "hessen", "mecklenburg-vorpommern", "niedersachsen", "nordrhein-westfalen",
+  "rheinland-pfalz", "saarland", "sachsen", "sachsen-anhalt", "schleswig-holstein", "thüringen"
+];
+
 async function ladeDaten() {
   const [orteRes, stiftungenRes] = await Promise.all([
     fetch('orte.json'),
@@ -14,30 +19,52 @@ async function ladeDaten() {
 ladeDaten();
 
 function sucheFoerderungen() {
-  const ort = document.getElementById('ort').value.trim();
+  const eingabe = document.getElementById('ort').value.trim().toLowerCase();
   const ergebnisBox = document.getElementById('ergebnisse');
   ergebnisBox.innerHTML = '';
 
-  const ortEintrag = orte.find(o => o.ort.toLowerCase() === ort.toLowerCase());
-  const bundesland = ortEintrag ? ortEintrag.bundesland : null;
+  const ortEintrag = orte.find(o => o.ort.toLowerCase() === eingabe);
+  const istBundesland = bundeslaender.includes(eingabe);
 
-  const lokale = ortEintrag ? stiftungen.filter(s => s.gebiet.toLowerCase() === ort.toLowerCase()) : [];
-  const regionale = ortEintrag ? stiftungen.filter(s => s.gebiet === bundesland) : [];
   const bundesweit = stiftungen.filter(s => s.gebiet === 'bundesweit');
 
-  if (!ortEintrag) {
-    const hinweis = document.createElement('p');
-    hinweis.className = 'highlight-box text-red-600 font-semibold';
-    hinweis.innerText = 'Dieser Ort konnte nicht gefunden werden. Hier sind bundesweite Finanzierungsquellen:';
-    ergebnisBox.appendChild(hinweis);
-    zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
-  } else {
+  // === Fall 1: Ort erkannt
+  if (ortEintrag) {
+    const bundesland = ortEintrag.bundesland;
+    const lokale = stiftungen.filter(s => s.gebiet.toLowerCase() === ortEintrag.ort.toLowerCase());
+    const regionale = stiftungen.filter(s => s.gebiet.toLowerCase() === bundesland.toLowerCase());
+
     const info = document.createElement('p');
     info.className = 'highlight-box font-semibold';
     info.innerHTML = `Gefundene Förderungen für <strong>${ortEintrag.ort}</strong> (${bundesland}):`;
     ergebnisBox.appendChild(info);
-    if (lokale.length) zeigeKategorie(`📍 Lokale Angebote (${ort})`, lokale, ergebnisBox);
+
+    if (lokale.length) zeigeKategorie(`📍 Lokale Angebote (${ortEintrag.ort})`, lokale, ergebnisBox);
     if (regionale.length) zeigeKategorie(`🏳️ Regionale Angebote (${bundesland})`, regionale, ergebnisBox);
+    zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
+
+  // === Fall 2: Bundesland direkt eingegeben
+  } else if (istBundesland) {
+    const bundeslandName = eingabe.charAt(0).toUpperCase() + eingabe.slice(1);
+    const regionale = stiftungen.filter(s => s.gebiet.toLowerCase() === eingabe);
+
+    const info = document.createElement('p');
+    info.className = 'highlight-box font-semibold';
+    info.innerHTML = `Gefundene Förderungen für das Bundesland <strong>${bundeslandName}</strong>:`;
+    ergebnisBox.appendChild(info);
+
+    if (eingabe === "niedersachsen" || eingabe === "bayern") {
+      if (regionale.length) zeigeKategorie(`🏳️ Regionale Angebote (${bundeslandName})`, regionale, ergebnisBox);
+    }
+
+    zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
+
+  // === Fall 3: Ort/Bundesland nicht gefunden
+  } else {
+    const hinweis = document.createElement('p');
+    hinweis.className = 'highlight-box text-red-600 font-semibold';
+    hinweis.innerText = 'Dieser Ort oder dieses Bundesland konnte nicht gefunden werden. Hier sind bundesweite Finanzierungsquellen:';
+    ergebnisBox.appendChild(hinweis);
     zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
   }
 }
