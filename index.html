@@ -11,8 +11,14 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .hero {
-      background: linear-gradient(to right, #f9fafb, #e3f2fd);
-      border-bottom: 2px solid #d1d5db;
+      background: linear-gradient(to right, #fefcfb, #e3f2fd);
+      border-bottom: 2px solid #e0e0e0;
+    }
+    .kompass {
+      display: inline-block;
+      font-size: 1.8rem;
+      vertical-align: middle;
+      margin-right: 0.5rem;
     }
   </style>
 </head>
@@ -20,7 +26,7 @@
   <header class="hero py-10 px-4 shadow">
     <div class="max-w-4xl mx-auto text-center">
       <h1 class="text-4xl md:text-5xl font-bold text-pink-600 leading-tight">
-        Digitale Unterstützung für Senior*innen – Jetzt Fördermöglichkeiten entdecken!
+        <span class="kompass">🧭</span>Digitale Unterstützung für Senior*innen – Jetzt Fördermöglichkeiten entdecken!
       </h1>
       <p class="mt-4 text-lg text-gray-600">
         Finde staatliche Programme, Stiftungen und Lotterien zur Förderung digitaler Betreuungsangebote in Altenpflegeeinrichtungen.
@@ -29,7 +35,7 @@
   </header>
 
   <main class="max-w-3xl mx-auto py-10 px-4">
-    <div class="bg-white bg-opacity-90 p-6 rounded shadow">
+    <div class="bg-white bg-opacity-90 p-6 rounded-xl shadow-lg">
       <label for="ort" class="block mb-2 text-lg font-medium">Gib eine Stadt ein (z. B. Hannover):</label>
       <div class="flex flex-col sm:flex-row gap-2 mb-6">
         <input id="ort" type="text" placeholder="Ort eingeben..." class="flex-1 p-2 border border-gray-300 rounded shadow-sm" />
