@@ -1,14 +1,5 @@
 [
-  {
-    "name": "Förderung nach dem Pflegepersonal-Stärkungsgesetz (PpSG)",
-    "typ": "Staatliche Förderung",
-    "gebiet": "bundesweit",
-    "beschreibung": "Stationäre Pflegeeinrichtungen erhalten bis zu 12.000 € Zuschuss für digitale/technische Ausstattung. Förderfähig sind z. B. WLAN, Lizenzen, Geräte. Antragsfrist bis 31.12.2030.",
-    "links": {
-      "antrag": "https://www.gkv-spitzenverband.de/media/dokumente/pflegeversicherung/finanzierungs_foerderungsmassnahmen/20230704_Pflege_Foerderung_8Abs8_SGBXI_Muster_Antrag.xlsx",
-      "richtlinien": "https://www.gkv-spitzenverband.de/media/dokumente/pflegeversicherung/finanzierungs_foerderungsmassnahmen/20230712_Pflege_Foerderung_Digi_RiLi_8_Abs.8_SGB_XI.pdf"
-    }
-  },
+
   {
     "name": "GlücksSpirale",
     "typ": "Soziallotterie",
@@ -83,7 +74,7 @@
     "links": {
       "richtlinien": "https://www.eva-meurer-stiftung.de/index_htm_files/Foerderrichtlinien%20Eva%20Meurer%20Stiftung.pdf"
     }
-  }
+  },
   {
   "name": "Förderung nach dem Pflegepersonal-Stärkungsgesetz (PpSG)",
   "typ": "Staatliche Förderung",
