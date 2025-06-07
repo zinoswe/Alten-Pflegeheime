@@ -49,9 +49,9 @@
 
   <main class="max-w-3xl mx-auto py-10 px-4">
     <div class="overlay bg-white p-6">
-      <label for="ort" class="block mb-2 text-lg font-medium">Gib eine Stadt ein (z. B. Hannover):</label>
+      <label for="ort" class="block mb-2 text-lg font-medium">Gib eine Stadt oder ein Bundesland ein (z. B. Hannover oder Bayern):</label>
       <div class="flex flex-col sm:flex-row gap-2 mb-6">
-        <input id="ort" type="text" placeholder="Ort eingeben..." class="flex-1 p-2 border border-gray-300 rounded shadow-sm" />
+        <input id="ort" type="text" placeholder="z. B. Stadt oder Bundesland" class="flex-1 p-2 border border-gray-300 rounded shadow-sm" />
         <button onclick="sucheFoerderungen()" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 shadow">Suchen</button>
       </div>
     </div>
@@ -62,6 +62,7 @@
     © 2025 – Fördermittelsuche für Altenpflegeeinrichtungen
   </footer>
 
-  <script src="script.js?v=3"></script>
+  <!-- Wichtig: Version anhängen, um Cache zu umgehen -->
+  <script src="script.js?v=4"></script>
 </body>
 </html>
