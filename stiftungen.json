@@ -594,39 +594,6 @@
     }
   },
   {
-    "name": "Edith-und-Erhard-Bausch-Stiftung",
-    "typ": "Stiftung",
-    "gebiet": "Bamberg",
-    "beschreibung": "Die Stiftung fördert gemeinnützige Projekte im Bereich der Altenhilfe in Bamberg.",
-    "links": {
-      "satzung": "https://www.stadt.bamberg.de/media/custom/3267_533_1.PDF?1652951984",
-      "kontakt": "https://tinyurl.com/yn3cvujq",
-      "telefon": "0951872411"
-    }
-  },
-  {
-    "name": "Paritätische Wohltätigkeitsstiftung Bamberg",
-    "typ": "Stiftung",
-    "gebiet": "Bamberg",
-    "beschreibung": "Gewährung von Unterstützungsbeihilfen an alte oder kranke Personen zur Beschaffung von Winterbedarf, an Personen zur vollen oder teilweisen Deckung von Krankenhaus- oder Klinikkosten sowie an Personen zur Durchführung von Erholungskuren. Außerdem für Investitionsmaßnahmen der Alten- und Jugendhilfe. Antragsstellung über allgemeinen Sozialdienst des Amtes für soziale Angelegenheiten.",
-    "links": {
-      "satzung": "https://www.stadt.bamberg.de/media/custom/329_73_1.PDF?1652950505",
-      "kontakt": "https://tinyurl.com/yn3cvujq",
-      "telefon": "0951872411"
-    }
-  },
-  {
-    "name": "Schiffauer-Stiftung",
-    "typ": "Stiftung",
-    "gebiet": "Bamberg",
-    "beschreibung": "Förderung von gemeinnützigen Projekten im Bereich der Kinder-, Jugend- und Altenhilfe, von Tier- und Naturschutz, von Kunst und Bildung.",
-    "links": {
-      "satzung": "https://www.stadt.bamberg.de/media/custom/1829_5946_1.PDF?1652949737",
-      "kontakt": "https://tinyurl.com/yn3cvujq",
-      "telefon": "0951872411"
-    }
-  },
-  {
     "name": "Oberfrankenstiftung",
     "typ": "Stiftung",
     "gebiet": "Bamberg",
@@ -645,5 +612,16 @@
       "antrag": "https://forms.non-profit-manager.org/applicantForm/c74b4b77-94ba-43e8-a119-59549c22f38f",
       "leitfaden": "https://www.oberfrankenstiftung.de/download/medien/pdf/ofrst_leitfaden_formulare.pdf"
     }
+  },
+  {
+  "name": "Stiftungen der Stadt Bamberg",
+  "typ": "Stiftung",
+  "gebiet": "Bamberg",
+  "beschreibung": "Die Stiftungen der Stadt Bamberg fördern gemeinnützige Projekte im Bereich der Altenhilfe in Bamberg. Anträge können direkt an die Stadtverwaltung gestellt werden.\n\nFolgende Einzelförderstiftungen gehören zur Stiftungsverwaltung:\n\n1. **Edith-und-Erhard-Bausch-Stiftung**\nFördert gemeinnützige Projekte im Bereich der Altenhilfe in Bamberg.\n\n2. **Paritätische Wohltätigkeitsstiftung Bamberg**\nGewährt Unterstützungsbeihilfen an alte oder kranke Personen zur Beschaffung von Winterbedarf, zur teilweisen Deckung von Krankenhaus- oder Klinikkosten sowie zur Durchführung von Erholungskuren. Außerdem werden Investitionsmaßnahmen der Alten- und Jugendhilfe unterstützt. Antragsstellung erfolgt über den allgemeinen Sozialdienst des Amtes für soziale Angelegenheiten.\n\n3. **Schiffauer-Stiftung**\nFördert gemeinnützige Projekte im Bereich der Kinder-, Jugend- und Altenhilfe sowie im Tier- und Naturschutz, in Kunst und Bildung.",
+  "links": {
+    "satzung": "https://www.stadt.bamberg.de/media/custom/3267_533_1.PDF?1652951984",
+    "kontakt": "https://tinyurl.com/yn3cvujq",
+    "telefon": "0951 87-2411"
   }
+}
 ]
