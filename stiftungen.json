@@ -361,32 +361,14 @@
     }
   },
   {
-    "name": "Stiftungsverwaltung der Landeshauptstadt München",
-    "typ": "Stiftung",
-    "gebiet": "München",
-    "beschreibung": "Das Wirken der durch die Stiftungsverwaltung der Landeshauptstadt München verwalteten sozialen Stiftungen ist vielfältig. Die Stiftungen können Zuschüsse an gemeinnützige Einrichtungen und Träger vergeben, die bedürftige Kinder, Jugendliche, Erwachsene, ältere Menschen, Kranke, Menschen mit Behinderungen sowie Obdachlose unterstützen."
-  },
-  {
-    "name": "Jakob und Therese Fedinger-Stiftung",
-    "typ": "Stiftung",
-    "gebiet": "München",
-    "beschreibung": "Die Stiftung vergibt neben der Unterstützung älterer bedürftiger Münchner*innen Zuschüsse an steuerbegünstigte Körperschaften zur Schaffung und Verbesserung von Einrichtungen der Altenhilfe in München."
-  },
-  {
-    "name": "Stiftung „Goldnes Münchner Herz“",
-    "typ": "Stiftung",
-    "gebiet": "München",
-    "beschreibung": "Die Stiftung fördert Gemeinschaftsveranstaltungen in Altenheimen. So können Theateraufführungen oder Konzerte bezuschusst werden, für die in den knappen Budgets der Senioreneinrichtungen oft keine Mittel zur Verfügung stehen."
-  },
-  {
-    "name": "Heinrich und Maria Eleonora Leininger Stiftung",
-    "typ": "Stiftung",
-    "gebiet": "München",
-    "beschreibung": "Die Stiftung unterstützt neben alten Münchnerinnen und Münchnern auch Einrichtungen, die alte und bedürftige Personen betreuen.\n\nGrundsätzliche Förderbedingungen:\n• Antrag von steuerbegünstigten Körperschaften,\n• für Projekte in München,\n• die unmittelbar dem betroffenen Personenkreis zugutekommen.\n\nWeitere Hinweise:\n• Vorrangige (gesetzliche) Leistungen müssen vorher ausgeschöpft sein.\n• Stiftungsmittel sind sparsam und wirtschaftlich zu verwenden.\n• Preisnachlässe und Skonti sind zu nutzen, ansonsten könnten sich Rückzahlungsverpflichtungen ergeben.\n\nAnträge für Zuschüsse sind direkt an die Stiftungsverwaltung im Sozialreferat der Landeshauptstadt München zu richten.",
-    "links": {
-      "antrag": "https://service.muenchen.de/intelliform/forms/01/03/03/antrag_stiftungsmittel/index",
-      "richtlinien": "https://stadt.muenchen.de/dam/Home/Stadtverwaltung/Sozialreferat/engagement/stiftungsverwaltung/allgemeine_Foerderkriterien"
-    }
+  "name": "Stiftungsverwaltung der Landeshauptstadt München",
+  "typ": "Stiftung",
+  "gebiet": "München",
+  "beschreibung": "Anträge für Zuschüsse sind direkt an die Stiftungsverwaltung im Sozialreferat der Landeshauptstadt München zu richten.\n\n**Grundsätzliche Förderbedingungen:**\n• Antrag von steuerbegünstigten Körperschaften\n• Für Projekte in München\n• Die unmittelbar dem betroffenen Personenkreis zugutekommen\n\n**Weitere Hinweise:**\n• Vorrangige (gesetzliche) Leistungen müssen vorher ausgeschöpft sein\n• Stiftungsmittel sind sparsam und wirtschaftlich zu verwenden\n• Preisnachlässe und Skonti sind zu nutzen – sonst drohen Rückzahlungsverpflichtungen\n\nDas Wirken der durch die Stiftungsverwaltung der Landeshauptstadt München verwalteten sozialen Stiftungen ist vielfältig. Die Stiftungen können Zuschüsse an gemeinnützige Einrichtungen und Träger vergeben, die bedürftige Kinder, Jugendliche, Erwachsene, ältere Menschen, Kranke, Menschen mit Behinderungen sowie Obdachlose unterstützen.\n\n**Zu den verwalteten Stiftungen zählen u. a.:**\n\n1. **Jakob und Therese Fedinger-Stiftung**\nDie Stiftung vergibt neben der Unterstützung älterer bedürftiger Münchner*innen Zuschüsse an steuerbegünstigte Körperschaften zur Schaffung und Verbesserung von Einrichtungen der Altenhilfe in München.\n\n2. **Stiftung „Goldnes Münchner Herz“**\nDie Stiftung fördert Gemeinschaftsveranstaltungen in Altenheimen. So können Theateraufführungen oder Konzerte bezuschusst werden, für die in den knappen Budgets der Senioreneinrichtungen oft keine Mittel zur Verfügung stehen.\n\n3. **Heinrich und Maria Eleonora Leininger Stiftung**\nDie Stiftung unterstützt neben alten Münchnerinnen und Münchnern auch Einrichtungen, die alte und bedürftige Personen betreuen.",
+  "links": {
+    "antrag": "https://service.muenchen.de/intelliform/forms/01/03/03/antrag_stiftungsmittel/index",
+    "richtlinien": "https://stadt.muenchen.de/dam/Home/Stadtverwaltung/Sozialreferat/engagement/stiftungsverwaltung/allgemeine_Foerderkriterien"
+  }
   },
   {
     "name": "Stiftungsverwaltung der Stadt Nürnberg",
