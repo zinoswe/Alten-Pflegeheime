@@ -371,38 +371,14 @@
   }
   },
   {
-    "name": "Stiftungsverwaltung der Stadt Nürnberg",
-    "typ": "Stiftung",
-    "gebiet": "Nürnberg",
-    "beschreibung": "Projektförderungen können Einrichtungen, Vereine oder Privatpersonen beantragen. Die Zuschüsse können für Projekte gewährt werden. Ein lokaler Bezug zu Nürnberg ist unerlässlich. Institutionen und Vereine müssen die Bescheinigung der Gemeinnützigkeit auf Verlangen vorlegen können."
-  },
-  {
-    "name": "Adolf-und-Gertraud-Müller-Stiftung",
-    "typ": "Stiftung",
-    "gebiet": "Nürnberg",
-    "beschreibung": "Der Stiftungszweck wird insbesondere verwirklicht durch:\n• die Aufrechterhaltung bzw. Verbesserung der Lebensqualität der Einrichtungsbewohner*innen,\n• die Unterstützung bei einer liebevollen Pflege und Betreuung der Einrichtungsbewohner*innen, sowie bei deren Unterbringung in freundlich und sachgerecht ausgestatteten Räumen bzw. Gebäuden,\n• durch Förderung der vorbeugenden, medizinischen, therapeutischen sowie pflegerischen Versorgung und Beratung der Einrichtungsbewohner*innen."
-  },
-  {
-    "name": "Ernst und Berta Wurzer Stiftung",
-    "typ": "Stiftung",
-    "gebiet": "Nürnberg",
-    "beschreibung": "Der Stiftungszweck wird insbesondere verwirklicht durch:\n• Förderung gesundheitlicher Maßnahmen (z.B. „Seniorengarten“, Sport- und Bewegungsangebote für Senioren)\n• Förderung von Maßnahmen der Altenhilfe (z.B. Freizeit- und Bildungsangebote)\n• Im Falle besonderer Bedürfnisse für Zwecke der allgemeinen Wohlfahrt"
-  },
-  {
-    "name": "Fritz-Hintermayr-Stiftung",
-    "typ": "Stiftung",
-    "gebiet": "Nürnberg",
-    "beschreibung": "Zuwendungen an die Stadt Nürnberg, an Träger der freien Wohlfahrtspflege oder an andere Vereinigungen, die selbst steuerbegünstigt sind, für Einrichtungen oder Vorhaben, die der Pflege der allgemeinen Wohlfahrt, der öffentlichen Gesundheit, der Jugend oder sonstigen gemeinnützigen und mildtätigen Zwecken dienen. Die Förderung dieser Einrichtungen und Vorhaben ist auf Nürnberg begrenzt.\n\nFrist: 15.09. jeden Jahres"
-  },
-  {
-    "name": "Heinrich Gröschel Stiftung",
-    "typ": "Stiftung",
-    "gebiet": "Nürnberg",
-    "beschreibung": "Finanzielle Zuwendungen an Einrichtungen im Bereich der Altenhilfe.\n\nAntragstellung: Antrag direkt bei der Stiftungsverwaltung der Stadt Nürnberg einreichen. Es muss keine bestimmte Stiftung angegeben werden; die Verwaltung prüft, welche Stiftung zu dem Vorhaben passt. Der Antrag sollte mindestens sechs Wochen vor Projektbeginn eingereicht werden.\n\nFrist: 15.07. jeden Jahres",
-    "links": {
-      "antrag": "https://meinkonto.nuernberg.de/intelliform/forms/n/200_stk/200_stk_f_projektfoerderung/show",
-      "upload": "https://online-service2.nuernberg.de/intelliform/forms/n/200_stk/200_stk_d_formup/index"
-    }
+  "name": "Stiftungsverwaltung der Stadt Nürnberg",
+  "typ": "Stiftung",
+  "gebiet": "Nürnberg",
+  "beschreibung": "Die Stiftungsverwaltung der Stadt Nürnberg betreut verschiedene gemeinnützige Stiftungen, über die Projektförderungen für Einrichtungen, Vereine oder Privatpersonen möglich sind. Die Zuschüsse können für Projekte gewährt werden. Ein lokaler Bezug zu Nürnberg ist unerlässlich. Institutionen und Vereine müssen die Bescheinigung der Gemeinnützigkeit auf Verlangen vorlegen können.\n\n**Zu den betreuten Stiftungen gehören unter anderem:**\n\n1. **Adolf-und-Gertraud-Müller-Stiftung**\nDer Stiftungszweck wird insbesondere verwirklicht durch:\n• die Aufrechterhaltung bzw. Verbesserung der Lebensqualität der Einrichtungsbewohner*innen,\n• die Unterstützung bei einer liebevollen Pflege und Betreuung der Einrichtungsbewohner*innen, sowie bei deren Unterbringung in freundlich und sachgerecht ausgestatteten Räumen bzw. Gebäuden,\n• durch Förderung der vorbeugenden, medizinischen, therapeutischen sowie pflegerischen Versorgung und Beratung der Einrichtungsbewohner*innen.\n\n2. **Ernst und Berta Wurzer Stiftung**\nDer Stiftungszweck wird insbesondere verwirklicht durch:\n• Förderung gesundheitlicher Maßnahmen (z. B. „Seniorengarten“, Sport- und Bewegungsangebote für Senioren)\n• Förderung von Maßnahmen der Altenhilfe (z. B. Freizeit- und Bildungsangebote)\n• Im Falle besonderer Bedürfnisse für Zwecke der allgemeinen Wohlfahrt\n\n3. **Fritz-Hintermayr-Stiftung**\nZuwendungen an die Stadt Nürnberg, an Träger der freien Wohlfahrtspflege oder an andere Vereinigungen, die selbst steuerbegünstigt sind, für Einrichtungen oder Vorhaben, die der Pflege der allgemeinen Wohlfahrt, der öffentlichen Gesundheit, der Jugend oder sonstigen gemeinnützigen und mildtätigen Zwecken dienen. Die Förderung dieser Einrichtungen und Vorhaben ist auf Nürnberg begrenzt.\n\n4. **Heinrich Gröschel Stiftung**\nFinanzielle Zuwendungen an Einrichtungen im Bereich der Altenhilfe.\n\n**Antragstellung:**\nAntrag direkt bei der Stiftungsverwaltung der Stadt Nürnberg einreichen. Es muss keine bestimmte Stiftung angegeben werden; die Verwaltung prüft, welche Stiftung zu dem Vorhaben passt. Der Antrag sollte mindestens sechs Wochen vor Projektbeginn eingereicht werden.\n\n**Fristen:**\n• Allgemeine Antragsfrist endet am 15.07. jeden Jahres\n• Antragsfrist für Fritz-Hintermayr-Stiftung endet am 15.09.",
+  "links": {
+    "antrag": "https://meinkonto.nuernberg.de/intelliform/forms/n/200_stk/200_stk_f_projektfoerderung/show",
+    "upload": "https://online-service2.nuernberg.de/intelliform/forms/n/200_stk/200_stk_d_formup/index"
+  }
   },
   {
     "name": "Bürgerstiftung Nürnberg",
