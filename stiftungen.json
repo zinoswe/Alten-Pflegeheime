@@ -629,7 +629,17 @@
   {
     "name": "Oberfrankenstiftung",
     "typ": "Stiftung",
-    "gebiet": "Oberfranken",
+    "gebiet": "Bamberg",
+    "beschreibung": "Die Stiftung engagiert sich im sozialen Bereich und unterstützt ein breites Spektrum an Projekten und Investitionen in Oberfranken. Gefördert werden insbesondere soziale Einrichtungen, die mit innovativen Konzepten oder modellhaften Ansätzen neue Wege gehen und so einen spürbaren Mehrwert für die Region schaffen. Auch Pflegeeinrichtungen mit einer besonderen inhaltlichen Ausrichtung, etwa für Menschen mit Behinderung oder mit einem spezialisierten Betreuungsansatz, können Fördermittel erhalten. Entscheidend ist dabei stets das Alleinstellungsmerkmal des Projekts und dessen Beitrag zur Verbesserung der Lebensqualität in Oberfranken. Voraussetzung ist jeweils, dass es sich um eine gemeinnützige Maßnahme eines gemeinnützigen Trägers handelt.",
+    "links": {
+      "antrag": "https://forms.non-profit-manager.org/applicantForm/c74b4b77-94ba-43e8-a119-59549c22f38f",
+      "leitfaden": "https://www.oberfrankenstiftung.de/download/medien/pdf/ofrst_leitfaden_formulare.pdf"
+    }
+  },
+  {
+    "name": "Oberfrankenstiftung",
+    "typ": "Stiftung",
+    "gebiet": "Bayreuth",
     "beschreibung": "Die Stiftung engagiert sich im sozialen Bereich und unterstützt ein breites Spektrum an Projekten und Investitionen in Oberfranken. Gefördert werden insbesondere soziale Einrichtungen, die mit innovativen Konzepten oder modellhaften Ansätzen neue Wege gehen und so einen spürbaren Mehrwert für die Region schaffen. Auch Pflegeeinrichtungen mit einer besonderen inhaltlichen Ausrichtung, etwa für Menschen mit Behinderung oder mit einem spezialisierten Betreuungsansatz, können Fördermittel erhalten. Entscheidend ist dabei stets das Alleinstellungsmerkmal des Projekts und dessen Beitrag zur Verbesserung der Lebensqualität in Oberfranken. Voraussetzung ist jeweils, dass es sich um eine gemeinnützige Maßnahme eines gemeinnützigen Trägers handelt.",
     "links": {
       "antrag": "https://forms.non-profit-manager.org/applicantForm/c74b4b77-94ba-43e8-a119-59549c22f38f",
