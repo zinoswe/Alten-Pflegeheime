@@ -300,10 +300,12 @@
     "name": "Stiftung Eheleute Taphorn",
     "typ": "Stiftung",
     "gebiet": "Vechta",
-    "beschreibung": "Die Stiftung Eheleute Taphorn wurde im Dezember 2009 von Walburga und Gerhard Taphorn zur Förderung der Altenhilfe errichtet. Sie unterstützt insbesondere Projekte, die die Lebensqualität pflegebedürftiger Menschen verbessern und Angehörige sowie Pflegekräfte entlasten. Die Stiftung hat bereits bewiesen, dass sie innovative Projekte in der Altenhilfe unterstützt. So wurde beispielsweise eine Einrichtung in Damme bei der Anschaffung eines Active Boards für Senior*innen finanziell gefördert. Projekte sollten im Gebiet des Landes-Caritasverbandes für Oldenburg durchgeführt werden.\n\nAntragstellung:\nFür die Antragstellung empfiehlt es sich, direkt Kontakt mit dem Landes-Caritasverband für Oldenburg aufzunehmen, unter dessen Dach die Stiftung Eheleute Taphorn verwaltet wird.\nKontakt:\nLandes-Caritasverband für Oldenburg e.V.\nPeterstraße 22-26.\n26121 Oldenburg.\nTel.: 0441/925450,\nE-Mail: info@caritas-ol.de"links": {
-      "telefon": "0441925450",
+    "beschreibung": "Die Stiftung Eheleute Taphorn wurde im Dezember 2009 von Walburga und Gerhard Taphorn zur Förderung der Altenhilfe errichtet. Sie unterstützt insbesondere Projekte, die die Lebensqualität pflegebedürftiger Menschen verbessern und Angehörige sowie Pflegekräfte entlasten. Die Stiftung hat bereits bewiesen, dass sie innovative Projekte in der Altenhilfe unterstützt. So wurde beispielsweise eine Einrichtung in Damme bei der Anschaffung eines Active Boards für Senior*innen finanziell gefördert. Projekte sollten im Gebiet des Landes-Caritasverbandes für Oldenburg durchgeführt werden.\n\nAntragstellung:\nFür die Antragstellung empfiehlt es sich, direkt Kontakt mit dem Landes-Caritasverband für Oldenburg aufzunehmen, unter dessen Dach die Stiftung Eheleute Taphorn verwaltet wird. Kontakt:Landes-Caritasverband für Oldenburg e.V. Peterstraße 22-26. 26121 Oldenburg. Tel.: 0441/925450, E-Mail: info@caritas-ol.de"       
+     "links": {  
+    "telefon": "0441925450",
       "email": "mailto:info@caritas-ol.de"
-    },
+    }
+     },
   {
     "name": "Kleebaum Stiftung",
     "typ": "Stiftung",
@@ -615,7 +617,7 @@
     "name": "Stiftung Eheleute Taphorn",
     "typ": "Stiftung",
     "gebiet": "Cloppenburg",
-    "beschreibung": "Die Stiftung Eheleute Taphorn wurde im Dezember 2009 von Walburga und Gerhard Taphorn zur Förderung der Altenhilfe errichtet. Sie unterstützt insbesondere Projekte, die die Lebensqualität pflegebedürftiger Menschen verbessern und Angehörige sowie Pflegekräfte entlasten. Die Stiftung hat bereits bewiesen, dass sie innovative Projekte in der Altenhilfe unterstützt. So wurde beispielsweise eine Einrichtung in Damme bei der Anschaffung eines Active Boards für Senior*innen finanziell gefördert. Projekte sollten im Gebiet des Landes-Caritasverbandes für Oldenburg durchgeführt werden.\n\nAntragstellung:\nFür die Antragstellung empfiehlt es sich, direkt Kontakt mit dem Landes-Caritasverband für Oldenburg aufzunehmen, unter dessen Dach die Stiftung Eheleute Taphorn verwaltet wird. \nKontakt:\nLandes-Caritasverband für Oldenburg e.V.\nPeterstraße 22-26.\n26121 Oldenburg.\nTel.: 0441/925450,\nE-Mail: info@caritas-ol.de",
+    "beschreibung": "Die Stiftung Eheleute Taphorn wurde im Dezember 2009 von Walburga und Gerhard Taphorn zur Förderung der Altenhilfe errichtet. Sie unterstützt insbesondere Projekte, die die Lebensqualität pflegebedürftiger Menschen verbessern und Angehörige sowie Pflegekräfte entlasten. Die Stiftung hat bereits bewiesen, dass sie innovative Projekte in der Altenhilfe unterstützt. So wurde beispielsweise eine Einrichtung in Damme bei der Anschaffung eines Active Boards für Senior*innen finanziell gefördert. Projekte sollten im Gebiet des Landes-Caritasverbandes für Oldenburg durchgeführt werden.\n\nAntragstellung:\nFür die Antragstellung empfiehlt es sich, direkt Kontakt mit dem Landes-Caritasverband für Oldenburg aufzunehmen, unter dessen Dach die Stiftung Eheleute Taphorn verwaltet wird. Kontakt:Landes-Caritasverband für Oldenburg e.V.Peterstraße 22-26.26121 Oldenburg.Tel.: 0441/925450,E-Mail: info@caritas-ol.de",
     "links": {
       "telefon": "0441925450",
       "email": "mailto:info@caritas-ol.de"
