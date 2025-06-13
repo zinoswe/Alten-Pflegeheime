@@ -28,7 +28,6 @@ function sucheFoerderungen() {
 
   const bundesweit = stiftungen.filter(s => s.gebiet === 'bundesweit');
 
-  // === Fall 1: Ort erkannt
   if (ortEintrag) {
     const bundesland = ortEintrag.bundesland;
     const lokale = stiftungen.filter(s => s.gebiet.toLowerCase() === ortEintrag.ort.toLowerCase());
@@ -40,10 +39,9 @@ function sucheFoerderungen() {
     ergebnisBox.appendChild(info);
 
     if (lokale.length) zeigeKategorie(`📍 Lokale Angebote (${ortEintrag.ort})`, lokale, ergebnisBox);
-    if (regionale.length) zeigeKategorie(`🏳️ Regionale Angebote (${bundesland})`, regionale, ergebnisBox);
+    if (regionale.length) zeigeKategorie(`🌿 Regionale Angebote (${bundesland})`, regionale, ergebnisBox);
     zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
 
-  // === Fall 2: Bundesland direkt eingegeben
   } else if (istBundesland) {
     const bundeslandName = eingabe.charAt(0).toUpperCase() + eingabe.slice(1);
     const regionale = stiftungen.filter(s => s.gebiet.toLowerCase() === eingabe);
@@ -54,12 +52,10 @@ function sucheFoerderungen() {
     ergebnisBox.appendChild(info);
 
     if (eingabe === "niedersachsen" || eingabe === "bayern") {
-      if (regionale.length) zeigeKategorie(`🏳️ Regionale Angebote (${bundeslandName})`, regionale, ergebnisBox);
+      if (regionale.length) zeigeKategorie(`🌿 Regionale Angebote (${bundeslandName})`, regionale, ergebnisBox);
     }
-
     zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
 
-  // === Fall 3: Ort/Bundesland nicht gefunden
   } else {
     const hinweis = document.createElement('p');
     hinweis.className = 'highlight-box text-red-600 font-semibold';
@@ -67,6 +63,37 @@ function sucheFoerderungen() {
     ergebnisBox.appendChild(hinweis);
     zeigeKategorie("🌐 Bundesweite Angebote", bundesweit, ergebnisBox);
   }
+}
+
+function formatBeschreibung(text) {
+  const zeilen = text.split('\n');
+  let html = '';
+  let inListe = false;
+
+  zeilen.forEach(zeile => {
+    const trimmed = zeile.trim();
+    if (/^[-\u2022*]/.test(trimmed)) {
+      if (!inListe) {
+        html += '<ul class="list-disc pl-6 mb-2">';
+        inListe = true;
+      }
+      html += `<li>${trimmed.replace(/^[-\u2022*]\s*/, '')}</li>`;
+    } else if (trimmed === '') {
+      if (inListe) {
+        html += '</ul>';
+        inListe = false;
+      }
+      html += '<br>';
+    } else {
+      if (inListe) {
+        html += '</ul>';
+        inListe = false;
+      }
+      html += `<p class="mb-2">${trimmed}</p>`;
+    }
+  });
+  if (inListe) html += '</ul>';
+  return html;
 }
 
 function zeigeKategorie(titel, eintraege, container) {
@@ -88,7 +115,7 @@ function zeigeKategorie(titel, eintraege, container) {
     div.className = `p-4 mt-2 rounded shadow ${farbe}`;
     div.innerHTML = `
       <h3 class="font-semibold text-lg">${e.name}</h3>
-      <p class="mb-2">${e.beschreibung}</p>
+      <div class="mb-2">${formatBeschreibung(e.beschreibung)}</div>
       ${e.links?.antrag ? `<a href="${e.links.antrag}" target="_blank" class="text-blue-700 underline">Antrag</a><br>` : ''}
       ${e.links?.richtlinien ? `<a href="${e.links.richtlinien}" target="_blank" class="text-blue-700 underline">Förderrichtlinien</a>` : ''}
     `;
