@@ -259,10 +259,10 @@
     "typ": "Stiftung",
     "gebiet": "Delmenhorst",
     "beschreibung": "Die Delmenhorster Bürgerstiftung fördert Projekte im sozialen, wirtschaftlichen und ökonomischen Bereich, die zur Verbesserung der Stadt Delmenhorst als Lebensraum beitragen und deren Bewohnern zugutekommen. Laut ihrer Satzung liegen die Schwerpunkte unter anderem auf der Altenhilfe, Kunst und Kultur und Gesundheitswesen/-pflege.\n\nVoraussetzungen: Es können nur Organisationen gefördert werden, die in Delmenhorst tätig sind. Informationen zur Antragstellung können telefonisch oder elektronisch erfragt werden. Tel.: 04221 6851681, E-Mail: delmenhorster.buergerstiftung@ewetel,net",
-    "links": 
+    "links": {
       "telefon": "+4942216851681",
       "email": "mailto:delmenhorster.buergerstiftung@ewetel.net"
-    
+    }
   },
   {
     "name": "Sparkassen Stiftung Lüneburg",
@@ -303,8 +303,7 @@
     "beschreibung": "Die Stiftung Eheleute Taphorn wurde im Dezember 2009 von Walburga und Gerhard Taphorn zur Förderung der Altenhilfe errichtet. Sie unterstützt insbesondere Projekte, die die Lebensqualität pflegebedürftiger Menschen verbessern und Angehörige sowie Pflegekräfte entlasten. Die Stiftung hat bereits bewiesen, dass sie innovative Projekte in der Altenhilfe unterstützt. So wurde beispielsweise eine Einrichtung in Damme bei der Anschaffung eines Active Boards für Senior*innen finanziell gefördert. Projekte sollten im Gebiet des Landes-Caritasverbandes für Oldenburg durchgeführt werden.\n\nAntragstellung:\nFür die Antragstellung empfiehlt es sich, direkt Kontakt mit dem Landes-Caritasverband für Oldenburg aufzunehmen, unter dessen Dach die Stiftung Eheleute Taphorn verwaltet wird.\nKontakt:\nLandes-Caritasverband für Oldenburg e.V.\nPeterstraße 22-26.\n26121 Oldenburg.\nTel.: 0441/925450,\nE-Mail: info@caritas-ol.de"links": {
       "telefon": "0441925450",
       "email": "mailto:info@caritas-ol.de"
-    }
-  },
+    },
   {
     "name": "Kleebaum Stiftung",
     "typ": "Stiftung",
